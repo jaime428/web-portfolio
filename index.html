@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaime Cruz</title>
+    <!-- Modern Clean Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Images -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Link to our custom static CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-brand-profile">
+                <img src="images/profile.jpg" alt="Profile" class="nav-avatar">
+                <span class="nav-name">Jaime Cruz</span>
+            </a>
+            
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="content-wrapper">     
+        <div id="loader">
+            <div class="spinner"></div> 
+        </div>
+
+        <!-- Hero Section -->
+        <section id="about" class="hero-section reveal delay-1">
+            <div class="hero-header">
+                <h1>Jaime Cruz</h1>
+            </div>
+            <div class="hero-text">
+                <h2>About Me</h2>
+                <p>Hi, I'm Jaime Cruz, an aspiring data analyst with a strong passion for professional growth. I am currently a student at the University of Maryland College Park, where I have gained a solid foundation in analytical tools such as Excel, SQL, Power BI, and Python.</p>
+        
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section reveal delay-2">
+            <div class="projects-header">
+                <h2>Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card reveal delay-3">
+                    <!-- Project 1: 2026 Cherry Blossom Peak Bloom Forecasts-->
+                    <h3>Cherry Blossom Peak Bloom Forecasts</h3>
+                    <p>A data science project built during the 2026 WSS hackathon that utilizes a NOAA API to scrape climate and temperature logs to model peak bloom trends. </p>
+                    <div class="tech-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">API</span>
+                        <span class="tag">Data Analytics</span>
+                        <span class="tag">Data Science</span>
+                    </div>
+                    <a href="https://github.com/joe-ledford-04/WSA-Petals-and-Probabilities-2026-Team-Data-United-" target="_blank" class="project-link">View Repository &rarr;</a>
+                </div>
+                <div class="project-card reveal delay-4">
+                    <!-- Project 2: Student Loan Monte Carlo Simulation-->
+                    <h3>Student Loan Monte Carlo Simulation</h3>
+                    <p>A Python/SQLite Monte Carlo simulation analyzing the opportunity cost of investing vs. paying off subsidized student loans, visualized in Tableau.</p>
+                    <div class="tech-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">SQL</span>
+                        <span class="tag">Tableau</span>
+                    </div>
+                    <a href="https://github.com/jcruz7-umd/Student-Loan-Optimization-Opportunity-Cost" target="_blank" class="project-link">View Repository &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section reveal delay-2">
+            <div class="contact-header">
+                <h2>Contact</h2>
+                <p>I am always open to discussing technical projects, internship opportunities, or professional collaborations. Let's build something efficient together.</p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Email Card -->
+                <a href="mailto:jaimecruz428@gmail.com" target="_blank" rel="noopener noreferrer" class="contact-card">
+                    <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                    <h3>Email</h3>
+                    <p>jaimecruz428@gmail.com</p>
+                    <span class="contact-action">Send a message &rarr;</span>
+                </a>
+
+                <!-- LinkedIn Card -->
+                <a href="https://www.linkedin.com/in/jaimecruz428/" target="_blank" rel="noopener noreferrer" class="contact-card">
+                    <div class="contact-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                    <h3>LinkedIn</h3>
+                    <p>linkedin.com/in/jaimecruz428/</p>
+                    <span class="contact-action">Connect with me &rarr;</span>
+                </a>
+
+                <!-- Resume Card -->
+                <a href="images/resume.pdf" target="_blank" rel="noopener noreferrer" class="contact-card">
+                    <div class="contact-icon"><i class="fa-regular fa-file"></i></div>
+                    <h3>Resume</h3>
+                    <p>Technical CV (PDF)</p>
+                    <span class="contact-action">View Document &rarr;</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Built with HTML & CSS</p>
+    </footer>
+
+    <script>
+        window.addEventListener("load", () => {
+            const loader = document.getElementById("loader");
+            loader.classList.add("loader-hidden");
+        });
+    </script>
+</body>
+</html>
